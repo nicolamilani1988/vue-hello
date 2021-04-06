@@ -14,9 +14,14 @@
     <body>
         <div id="app" class="container">
             <div class="row">
-                <h1 :class="textClass">{{text}} {{message}}</h1>
+                <h1 :class="textClass">{{text}} {{nome}} {{cognome}}</h1>
                 <h1 :class="textClass" ></h1>
-                <input :class="bgClass" type="text" v-model="message" placeholder = "Inserisci il tuo nome">               
+                <label>Inserisci nome</label>
+                <input :class="bgClass" type="text" v-model="nome" placeholder = "Nome">               
+                <label>Inserisci cognome</label>
+                <input :class="bgClass" type="text" v-model="cognome" placeholder = "Cognome">
+                <label>Scrivi colore del saluto</label>
+                <input id="color-input" :class="bgClass" type="text" v-model="textClass" placeholder = "Scegli tra blu,rosso,verde,giallo">              
             </div>          
         </div>
     </body>

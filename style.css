@@ -6,6 +6,22 @@
     background-color: pink;
 }
 
-.blue-text{
+#color-input{
+    width: 200px;
+}
+
+.blu{
     color: blue;
+}
+
+.rosso{
+    color:red;
+}
+
+.verde{
+    color: green;
+}
+
+.giallo{
+    color: yellow;
 }

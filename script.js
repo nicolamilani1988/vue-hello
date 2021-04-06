@@ -3,9 +3,10 @@ function initVue() {
         el: '#app', 
         data: {
             text: 'Benvenuto ',
-            message: '',
+            nome: '',
+            cognome: '',
             bgClass: "bg-pink",
-            textClass: "blue-text"
+            textClass: ""
         },
         
     })  
