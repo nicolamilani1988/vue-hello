@@ -4,7 +4,10 @@ function initVue() {
         data: {
             text: 'Benvenuto ',
             message: '',
-        }
+            bgClass: "bg-pink",
+            textClass: "blue-text"
+        },
+        
     })  
 }
 

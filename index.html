@@ -14,8 +14,9 @@
     <body>
         <div id="app" class="container">
             <div class="row">
-                <h1>{{text}} {{message}}</h1>
-                <input type="text" v-model="message" placeholder = "Inserisci il tuo nome">               
+                <h1 :class="textClass">{{text}} {{message}}</h1>
+                <h1 :class="textClass" ></h1>
+                <input :class="bgClass" type="text" v-model="message" placeholder = "Inserisci il tuo nome">               
             </div>          
         </div>
     </body>
