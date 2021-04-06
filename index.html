@@ -21,10 +21,12 @@
                 <label>Inserisci cognome</label>
                 <input :class="bgClass" type="text" v-model="cognome" placeholder = "Cognome">
                 <label>Scrivi colore del saluto</label>
-                <input id="color-input" :class="bgClass" type="text" v-model="textClass" placeholder = "Scegli tra blu,rosso,verde,giallo">  
+                <input class="color-input" :class="bgClass" type="text" v-model="textClass" placeholder = "Scegli tra blu,rosso,verde,giallo">
+                <label>Scegli colore background foto</label>
+                <input class="color-input" :class="bgClass" type="text" v-model="bgClassInput" placeholder = "Scegli tra bg-blue,bg-red,bg-pink,bg-green"> 
                 
                 <!-- bonus -->
-                <div class="img-container">
+                <div class="img-container" :class="bgClassInput">
                     <img :src="image" alt="">
                 </div>
 
