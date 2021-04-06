@@ -25,3 +25,8 @@
 .giallo{
     color: yellow;
 }
+
+.img-container>img{
+    padding: 50px;
+    width: 200px;
+}

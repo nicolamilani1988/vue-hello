@@ -6,7 +6,8 @@ function initVue() {
             nome: '',
             cognome: '',
             bgClass: "bg-pink",
-            textClass: ""
+            textClass: "",
+            image: "./img/trollface.jpg"
         },
         methods:{
             saluto: function(){

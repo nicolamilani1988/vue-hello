@@ -7,7 +7,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- VueJS -->
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <title>Vue - intro</title>
+        <title>Vue - </title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js" charset="utf-8"></script>
     </head>
@@ -21,7 +21,13 @@
                 <label>Inserisci cognome</label>
                 <input :class="bgClass" type="text" v-model="cognome" placeholder = "Cognome">
                 <label>Scrivi colore del saluto</label>
-                <input id="color-input" :class="bgClass" type="text" v-model="textClass" placeholder = "Scegli tra blu,rosso,verde,giallo">              
+                <input id="color-input" :class="bgClass" type="text" v-model="textClass" placeholder = "Scegli tra blu,rosso,verde,giallo">  
+                
+                <!-- bonus -->
+                <div class="img-container">
+                    <img :src="image" alt="">
+                </div>
+
             </div>          
         </div>
     </body>
