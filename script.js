@@ -8,6 +8,13 @@ function initVue() {
             bgClass: "bg-pink",
             textClass: ""
         },
+        methods:{
+            saluto: function(){
+                return `
+                    ${this.text} ${this.nome} ${this.cognome} 
+                `
+            }
+        }
         
     })  
 }
