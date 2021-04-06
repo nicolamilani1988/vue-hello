@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- VueJS -->
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <title>Vue - intro</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="app" class="container">
+            <div class="row">
+                <h1 :class="bgClass">{{title}} {{clickNumber}}</h1>
+                <button @click="clickIncreaser" >+</button>
+                <button @click="clickDecreaser">-</button>
+                <button @click="colorChanger">Cambia colore</button>
+            </div>            
+        </div>
+    </body>
+</html>
