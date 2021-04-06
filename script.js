@@ -1,6 +1,7 @@
 function initVue() {
     new Vue({
-        el: '#app', 
+        el: '#app',
+
         data: {
             text: 'Benvenuto ',
             nome: '',
@@ -10,6 +11,7 @@ function initVue() {
             image: "./img/trollface.jpg",
             bgClassInput: "",
         },
+        
         methods:{
             saluto: function(){
                 return `

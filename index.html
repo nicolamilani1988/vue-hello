@@ -7,25 +7,32 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- VueJS -->
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <title>Vue - </title>
+        <title>Vue - Hello</title>
         <link rel="stylesheet" href="style.css">
         <script src="script.js" charset="utf-8"></script>
     </head>
     <body>
         <div id="app" class="container">
             <div class="row">
+                <!-- text con data normali -->
                 <h1 :class="textClass">{{text}} {{nome}} {{cognome}}</h1>
+                <!-- text con funzioni -->
                 <h1 :class="textClass">{{saluto()}}</h1>
+                <!-- input nome -->
                 <label>Inserisci nome</label>
-                <input :class="bgClass" type="text" v-model="nome" placeholder = "Nome">               
+                <input :class="bgClass" type="text" v-model="nome" placeholder = "Nome">  
+                <!-- input cognome -->
                 <label>Inserisci cognome</label>
                 <input :class="bgClass" type="text" v-model="cognome" placeholder = "Cognome">
+                <!-- input colore testo -->
                 <label>Scrivi colore del saluto</label>
                 <input class="color-input" :class="bgClass" type="text" v-model="textClass" placeholder = "Scegli tra blu,rosso,verde,giallo">
+                <!-- BONUS -->
+                <!-- input colore BACKGROUND FOTO -->
                 <label>Scegli colore background foto</label>
                 <input class="color-input" :class="bgClass" type="text" v-model="bgClassInput" placeholder = "Scegli tra bg-blue,bg-red,bg-pink,bg-green"> 
                 
-                <!-- bonus -->
+                <!-- bonus - IMAGE -->
                 <div class="img-container" :class="bgClassInput">
                     <img :src="image" alt="">
                 </div>
