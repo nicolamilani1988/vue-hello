@@ -6,8 +6,16 @@
     background-color: pink;
 }
 
-#color-input{
-    width: 200px;
+.bg-yellow{
+    background-color: yellow;
+}
+
+.bg-green{
+    background-color: green;
+}
+
+.color-input{
+    width: 300px;
 }
 
 .blu{
@@ -26,7 +34,12 @@
     color: yellow;
 }
 
+.img-container{
+    width: 300px;
+    text-align: center;
+}
+
 .img-container>img{
-    padding: 50px;
-    width: 200px;
+    padding: 20px 0;
+    width: 80%;
 }

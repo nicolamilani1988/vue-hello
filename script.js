@@ -7,7 +7,8 @@ function initVue() {
             cognome: '',
             bgClass: "bg-pink",
             textClass: "",
-            image: "./img/trollface.jpg"
+            image: "./img/trollface.jpg",
+            bgClassInput: "",
         },
         methods:{
             saluto: function(){
